@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 16px;
+}
+
+/* Navbar */
+.navbar {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+}
+
+.nav-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #e10600;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #444;
+  font-size: 14px;
+}
+
+.btn-masuk {
+  background: #e10600;
+  color: #fff !important;
+  padding: 6px 14px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* Banner */
+.banner {
+  background: #e10600;
+  color: #fff;
+  padding: 30px 0;
+}
+
+.banner h1 {
+  font-size: 24px;
+  margin-bottom: 6px;
+}
+
+.banner p {
+  font-size: 14px;
+}
+
+/* Section & Cards */
+.section {
+  padding-top: 30px;
+  scroll-margin-top: 70px;
+}
+
+.section h2 {
+  font-size: 18px;
+  margin-bottom: 14px;
+  border-bottom: 2px solid #e10600;
+  display: inline-block;
+}
+
+.card-group {
+  display: flex;
+  gap: 16px;
+}
+
+.card {
+  flex: 1;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card p {
+  font-size: 13px;
+  color: #666;
+  flex-grow: 1;
+}
+
+.card small {
+  color: #888;
+}
+
+.harga {
+  font-size: 16px;
+  font-weight: bold;
+  color: #e10600;
+}
+
+.btn-beli {
+  background: #e10600;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  padding: 8px;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* Bantuan & Footer */
+.help-box {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 13px;
+}
+
+footer {
+  text-align: center;
+  padding: 24px 0;
+  font-size: 12px;
+  color: #777;
+  margin-top: 40px;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .nav-links a:not(.btn-masuk) {
+    display: none;
+  }
+
+  .banner h1 {
+    font-size: 20px;
+  }
+
+  .card-group {
+    flex-direction: column;
+  }
+}
