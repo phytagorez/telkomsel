@@ -16,9 +16,9 @@ body {
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 1140px;
   margin: auto;
-  padding: 0 16px;
+  padding: 0 20px;
 }
 
 /* Navbar */
@@ -27,26 +27,28 @@ body {
   border-bottom: 1px solid #ddd;
   position: sticky;
   top: 0;
+  z-index: 10;
 }
 
 .nav-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
+  height: 64px;
 }
 
 .logo {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
   color: #e10600;
   text-decoration: none;
+  letter-spacing: 0.5px;
 }
 
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 20px;
 }
 
 .nav-links a {
@@ -55,57 +57,73 @@ body {
   font-size: 14px;
 }
 
-.btn-masuk {
+.nav-links a:hover {
+  color: #e10600;
+}
+
+.nav-links .btn-masuk {
   background: #e10600;
-  color: #fff !important;
-  padding: 6px 14px;
+  color: #fff;
+  padding: 8px 18px;
   border-radius: 4px;
   font-weight: bold;
+}
+
+.nav-links .btn-masuk:hover {
+  background: #c00500;
+  color: #fff;
 }
 
 /* Banner */
 .banner {
   background: #e10600;
   color: #fff;
-  padding: 30px 0;
+  padding: 40px 0;
 }
 
 .banner h1 {
-  font-size: 24px;
-  margin-bottom: 6px;
+  font-size: 28px;
+  margin-bottom: 8px;
 }
 
 .banner p {
-  font-size: 14px;
+  font-size: 15px;
 }
 
 /* Section & Cards */
 .section {
-  padding-top: 30px;
+  padding-top: 36px;
   scroll-margin-top: 70px;
 }
 
 .section h2 {
-  font-size: 18px;
-  margin-bottom: 14px;
+  font-size: 20px;
+  margin-bottom: 16px;
   border-bottom: 2px solid #e10600;
   display: inline-block;
+  padding-bottom: 4px;
 }
 
 .card-group {
   display: flex;
-  gap: 16px;
+  gap: 20px;
 }
 
 .card {
   flex: 1;
   background: #fff;
   border: 1px solid #ddd;
-  border-radius: 7px;
-  padding: 16px;
+  border-radius: 6px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.card h3 {
+  font-size: 17px;
+  color: #222;
 }
 
 .card p {
@@ -116,12 +134,16 @@ body {
 
 .card small {
   color: #888;
+  font-size: 12px;
+  margin-bottom: 8px;
+  display: block;
 }
 
 .harga {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   color: #e10600;
+  margin-bottom: 4px;
 }
 
 .btn-beli {
@@ -129,30 +151,36 @@ body {
   color: #fff;
   text-decoration: none;
   text-align: center;
-  padding: 8px;
-  border-radius: 7px;
+  padding: 10px;
+  border-radius: 4px;
   font-size: 13px;
   font-weight: bold;
+}
+
+.btn-beli:hover {
+  background: #c00500;
 }
 
 /* Bantuan & Footer */
 .help-box {
   background: #fff;
   border: 1px solid #ddd;
-  padding: 16px;
-  border-radius: 4px;
+  padding: 20px;
+  border-radius: 6px;
   display: flex;
   flex-direction: column;
   gap: 8px;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 footer {
   text-align: center;
-  padding: 24px 0;
+  padding: 28px 0;
   font-size: 12px;
   color: #777;
-  margin-top: 40px;
+  margin-top: 50px;
+  border-top: 1px solid #eee;
+  background-color: #fff;
 }
 
 /* Responsif */
@@ -161,11 +189,16 @@ footer {
     display: none;
   }
 
+  .banner {
+    padding: 28px 0;
+  }
+
   .banner h1 {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .card-group {
     flex-direction: column;
+    gap: 14px;
   }
 }
