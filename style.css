@@ -16,15 +16,15 @@ body {
 }
 
 .container {
-  max-width: 1080px;
+  max-width: 1280px;
   margin: auto;
-  padding: 0 20px;
+  padding: 0 24px;
 }
 
 /* Navbar */
 .navbar {
   background: #fff;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid #ddd;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -71,33 +71,33 @@ body {
 
 .nav-links .btn-masuk:hover {
   background: #c00500;
+  color: #fff;
 }
 
 /* Banner */
 .banner {
   background: #e10600;
   color: #fff;
-  padding: 40px 0;
+  padding: 44px 0;
 }
 
 .banner h1 {
-  font-size: 26px;
+  font-size: 28px;
   margin-bottom: 8px;
 }
 
 .banner p {
-  font-size: 14px;
-  opacity: 0.95;
+  font-size: 15px;
 }
 
 /* Section & Cards */
 .section {
   padding-top: 36px;
-  scroll-margin-top: 75px;
+  scroll-margin-top: 70px;
 }
 
 .section h2 {
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 16px;
   border-bottom: 2px solid #e10600;
   display: inline-block;
@@ -106,46 +106,44 @@ body {
 
 .card-group {
   display: flex;
-  gap: 20px;
+  gap: 24px;
 }
 
 .card {
   flex: 1;
   background: #fff;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #ddd;
   border-radius: 6px;
-  padding: 22px 18px;
+  padding: 24px;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  gap: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
 .card h3 {
-  font-size: 17px;
+  font-size: 18px;
   color: #222;
-  margin-bottom: 8px;
 }
 
 .card p {
-  font-size: 13px;
+  font-size: 14px;
   color: #666;
-  line-height: 1.4;
-  margin-bottom: 6px;
   flex-grow: 1;
 }
 
 .card small {
   color: #888;
   font-size: 12px;
+  margin-bottom: 8px;
   display: block;
-  margin-bottom: 18px;
 }
 
 .harga {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
   color: #e10600;
-  margin-bottom: 12px;
+  margin-bottom: 6px;
 }
 
 .btn-beli {
@@ -153,11 +151,10 @@ body {
   color: #fff;
   text-decoration: none;
   text-align: center;
-  padding: 10px 0;
+  padding: 10px;
   border-radius: 4px;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: bold;
-  display: block;
 }
 
 .btn-beli:hover {
@@ -167,8 +164,8 @@ body {
 /* Bantuan & Footer */
 .help-box {
   background: #fff;
-  border: 1px solid #e0e0e0;
-  padding: 20px;
+  border: 1px solid #ddd;
+  padding: 24px;
   border-radius: 6px;
   display: flex;
   flex-direction: column;
@@ -181,8 +178,8 @@ footer {
   padding: 28px 0;
   font-size: 12px;
   color: #777;
-  margin-top: 60px;
-  border-top: 1px solid #e5e5e5;
+  margin-top: 50px;
+  border-top: 1px solid #eee;
   background-color: #fff;
 }
 
@@ -197,11 +194,11 @@ footer {
   }
 
   .banner h1 {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .card-group {
     flex-direction: column;
-    gap: 16px;
+    gap: 14px;
   }
 }
